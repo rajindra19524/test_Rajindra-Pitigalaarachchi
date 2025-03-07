@@ -12,8 +12,8 @@
             height: 380px;
         }
         .hero-banner{
-           
-            background-image: url("images/Hero Banner.png");
+            background-image:url('images/Hero Background Shape.svg'),
+                             url("images/Hero Banner.png");
             background-position: center;
            background-size: cover;
          }
@@ -77,12 +77,25 @@
           height:400px;
           width: 100%;
         }
+        .nav div{
+          cursor: pointer;
+        }
+        .sub-box2 img{
+          cursor: pointer;
+         }
+        
+
         
     </style>
     
     <title>Hello, world!</title>
   </head>
   <body>
+    <script>
+      const showHamburgerMenu = () =>{
+
+      }
+    </script>
     <div class="container-fluid hero-banner text-white" >
         <div class="row r1">
             <div class="col-md-6 logo">
@@ -98,8 +111,9 @@
               <a href="#">About Us</a>
               <a href="#">Features</a>
               <a href="#">Contacts</a>
+              <div onClick="{showHamburgerMenu}">
               <img src="images/hamburger-menu-icon.svg" alt="Icon" width="20" height="20">
-
+              </div>
             </div>
         </div>
         <div class="row r2" >
@@ -116,7 +130,7 @@
         <div class="row justify-content-md-center">
           <div class="col-6">
             <h2 style="color: blue; text-align: center; padding-top: 100px;font-family:'Segoe UI';text-decoration: underline;text-decoration-color: black;">About Us</h2>
-            <p style="text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit sit, harum nesciunt veritatis, 
+            <p style="text-align: center;margin-top: 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit sit, harum nesciunt veritatis, 
               praesentium error fuga provident placeat quis natus corporis neque autem amet temporibus nihil labore vel non?</p>
           </div>  
         </div>
